@@ -31,15 +31,12 @@ const Resizable = ({ children, minWidth = 200 }) => {
   return (
     <div
       ref={resizableRef}
-      style={{ width: typeof width === "string" ? width : `${width}px` }} // Handle both px and 100%
+      style={{ width: typeof width === "string" ? width : `${width}px` }}
       className="relative"
     >
-      {/* Wrapped content */}
       {children}
-
-      {/* Resizable Handler */}
       <div
-        className="absolute top-0 right-0 h-full w-2 bg-gray-700 cursor-ew-resize"
+        className="absolute top-0 right-0 h-full w-1 bg-gray-700 cursor-ew-resize"
         onMouseDown={() => setIsResizing(true)}
       />
     </div>
