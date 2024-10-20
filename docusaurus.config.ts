@@ -4,7 +4,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "My Site",
+  title: "Quick Components",
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
@@ -61,9 +61,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "My Site",
+      title: "Quick Components",
       logo: {
-        alt: "My Site Logo",
+        alt: "Quick Components Logo",
         src: "img/logo.svg",
       },
       items: [
@@ -71,7 +71,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Docs",
         },
         {
           href: "https://github.com/facebook/docusaurus",
