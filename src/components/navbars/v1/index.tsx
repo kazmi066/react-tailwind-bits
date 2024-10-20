@@ -18,7 +18,7 @@ export const Navbar1 = () => {
 
           {/* Right Panel */}
           <nav className="right-panel">
-            <ul className="m-0 md:flex items-end gap-x-3 hidden list-none">
+            <ul className="m-0 md:flex items-center gap-x-3 hidden list-none">
               <li>
                 <a
                   href="#"

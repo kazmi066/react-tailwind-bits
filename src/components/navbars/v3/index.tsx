@@ -18,7 +18,7 @@ export const Navbar3 = () => {
 
           {/* Center Panel */}
           <nav className="right-panel">
-            <ul className="m-0 md:flex items-end gap-x-5 hidden list-none">
+            <ul className="m-0 md:flex items-center gap-x-5 hidden list-none">
               <li>
                 <a href="#" className="underline text-white hover:no-underline" aria-current="page">
                   About

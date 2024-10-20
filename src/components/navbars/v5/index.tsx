@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-export const Navbar4 = () => {
+export const Navbar5 = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="bg-gray-800 my-2 w-full">
@@ -48,14 +49,56 @@ export const Navbar4 = () => {
           </div>
 
           {/* Right Panel */}
-          <div>
-            <a
-              href="#"
-              className=" md:inline-block hidden rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:no-underline"
-              aria-current="page"
-            >
-              Sign In
-            </a>
+          <div className="flex items-center gap-5">
+            <div className="relative flex">
+              <img
+                className="w-10 h-10 rounded-full border-2 border-solid border-gray-400 cursor-pointer"
+                src="https://pagedone.io/asset/uploads/1704275541.png"
+                alt="Bordered avatar"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              />
+              <div
+                className={`w-80 inline-block absolute -right-[200%] md:right-1/2 top-full z-10 bg-white rounded-xl shadow-md text-left transition-all ${
+                  isMenuOpen
+                    ? "visible opacity-100 pointer-events-auto"
+                    : "invisible opacity-0 pointer-events-none"
+                }`}
+              >
+                <div className="p-3 border-b border-gray-200 flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src="https://pagedone.io/asset/uploads/1715323614.png"
+                      alt="image"
+                      className="w-12 h-12 rounded-full"
+                    />
+                    <div className="block">
+                      <h5 className="text-sm text-gray-900 font-medium m-0">John Doe</h5>
+                      <span className="text-sm text-gray-500 font-normal m-0">@johndoe12</span>
+                    </div>
+                  </div>
+                </div>
+                <ul className="m-0 px-0 space-y-[1px] list-none">
+                  <li>
+                    <a
+                      href="#"
+                      className="block p-3 bg-gray-900 text-sm font-medium text-white hover:no-underline"
+                      aria-current="page"
+                    >
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block bg-gray-900 p-3 text-sm font-medium text-white hover:no-underline"
+                      aria-current="page"
+                    >
+                      Account Settings
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
             {/* Mobile Menu Button */}
             <button
