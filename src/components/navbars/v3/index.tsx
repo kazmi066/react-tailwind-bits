@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const Navbar1 = () => {
+export const Navbar3 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,19 +16,36 @@ export const Navbar1 = () => {
             />
           </div>
 
-          {/* Right Panel */}
+          {/* Center Panel */}
           <nav className="right-panel">
-            <ul className="m-0 md:flex items-end gap-x-3 hidden list-none">
+            <ul className="m-0 md:flex items-end gap-x-5 hidden list-none">
               <li>
-                <a
-                  href="#"
-                  className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:no-underline"
-                  aria-current="page"
-                >
-                  Sign In
+                <a href="#" className="underline text-white hover:no-underline" aria-current="page">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" className="underline text-white hover:no-underline" aria-current="page">
+                  Products
+                </a>
+              </li>
+              <li>
+                <a href="#" className="underline text-white hover:no-underline" aria-current="page">
+                  Demo
                 </a>
               </li>
             </ul>
+          </nav>
+
+          {/* Right Panel */}
+          <div>
+            <a
+              href="#"
+              className=" md:inline-block hidden rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:no-underline"
+              aria-current="page"
+            >
+              Sign In
+            </a>
 
             {/* Mobile Menu Button */}
             <button
@@ -54,7 +71,7 @@ export const Navbar1 = () => {
                 />
               </svg>
             </button>
-          </nav>
+          </div>
         </div>
 
         {/* Conditionally Render Mobile Menu */}
@@ -71,7 +88,34 @@ export const Navbar1 = () => {
                 className="block rounded-md bg-gray-900 p-3 text-sm font-medium text-white hover:no-underline"
                 aria-current="page"
               >
-                Dashboard
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block rounded-md bg-gray-900 p-3 text-sm font-medium text-white hover:no-underline"
+                aria-current="page"
+              >
+                Products
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block rounded-md bg-gray-900 p-3 text-sm font-medium text-white hover:no-underline"
+                aria-current="page"
+              >
+                Demo
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block rounded-md bg-white p-3 text-sm font-medium text-black hover:no-underline hover:bg-slate-100 hover:text-black"
+                aria-current="page"
+              >
+                Sign In
               </a>
             </li>
           </ul>
