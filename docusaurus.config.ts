@@ -4,12 +4,12 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "React Tailwind Snippets",
+  title: "React Tailwind Bits",
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://reacttailwindbits.netlify.app/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -32,8 +32,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/kazmi066/react-tailwind-bits",
         },
         blog: {
           showReadingTime: true,
@@ -43,8 +42,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/kazmi066/react-tailwind-bits",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -61,9 +59,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "React Tailwind Snippets",
+      title: "React Tailwind Bits",
       logo: {
-        alt: "React Tailwind Snippets Logo",
+        alt: "React Tailwind Bits Logo",
         src: "img/logo.svg",
       },
       items: [
@@ -74,7 +72,7 @@ const config: Config = {
           label: "Docs",
         },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/kazmi066/react-tailwind-bits",
           label: "GitHub",
           position: "right",
         },
@@ -87,39 +85,26 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: "Components",
+              to: "/docs/category/components",
             },
           ],
         },
         {
           title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
-          ],
+          items: [],
         },
         {
           title: "More",
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/kazmi066/react-tailwind-bits",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()}, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
