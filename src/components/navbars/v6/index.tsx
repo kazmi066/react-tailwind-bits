@@ -58,7 +58,7 @@ export const Navbar6 = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               />
               <div
-                className={`w-80 inline-block absolute -right-[200%] md:right-1/2 top-full z-10 bg-white rounded-xl shadow-md text-left transition-all ${
+                className={`w-80 inline-block absolute -right-[200%] md:right-1/2 top-full z-10 bg-white rounded-xl shadow-md text-left transition-all overflow-hidden ${
                   isMenuOpen
                     ? "visible opacity-100 pointer-events-auto"
                     : "invisible opacity-0 pointer-events-none"
