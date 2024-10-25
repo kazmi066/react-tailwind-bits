@@ -1,12 +1,17 @@
+---
+title: Navbar Variant 8
+---
+
+```javascript
 import { useState } from "react";
 
-export const Navbar5 = () => {
+export const Navbar8 = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="bg-gray-800 my-2 w-full">
-      <div className="mx-auto max-w-[1500px] p-3">
+      <div className="mx-auto max-w-[500px] px-3 py-2 bg-white md:rounded-full">
         <div className="flex items-center justify-between">
           {/* Left Panel */}
           <div className="flex items-center">
@@ -15,12 +20,16 @@ export const Navbar5 = () => {
               src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
               alt="Your Company"
             />
+          </div>
+
+          {/* Right Panel */}
+          <div className="flex items-center gap-5">
             <nav className="right-panel">
               <ul className="m-0 md:flex items-center gap-x-5 hidden list-none">
                 <li>
                   <a
                     href="#"
-                    className="underline text-white hover:no-underline"
+                    className="underline text-black hover:text-gray-600 hover:no-underline"
                     aria-current="page"
                   >
                     About
@@ -29,7 +38,7 @@ export const Navbar5 = () => {
                 <li>
                   <a
                     href="#"
-                    className="underline text-white hover:no-underline"
+                    className="underline text-black hover:text-gray-600 hover:no-underline"
                     aria-current="page"
                   >
                     Products
@@ -38,7 +47,7 @@ export const Navbar5 = () => {
                 <li>
                   <a
                     href="#"
-                    className="underline text-white hover:no-underline"
+                    className="underline text-black hover:text-gray-600 hover:no-underline"
                     aria-current="page"
                   >
                     Demo
@@ -46,10 +55,6 @@ export const Navbar5 = () => {
                 </li>
               </ul>
             </nav>
-          </div>
-
-          {/* Right Panel */}
-          <div className="flex items-center gap-5">
             <div className="relative flex">
               <img
                 className="w-10 h-10 rounded-full border-2 border-solid border-gray-400 cursor-pointer"
@@ -58,11 +63,12 @@ export const Navbar5 = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               />
               <div
-                className={`w-80 inline-block absolute -right-[200%] md:right-1/2 top-full z-10 bg-white rounded-xl shadow-md text-left transition-all ${
-                  isMenuOpen
-                    ? "visible opacity-100 pointer-events-auto"
-                    : "invisible opacity-0 pointer-events-none"
-                }`}
+                className={`w-80 inline-block absolute -right-[200%] md:right-1/2 top-full z-10 bg-white rounded-xl
+                  shadow-md shadow-black text-left transition-all ${
+                    isMenuOpen
+                      ? "visible opacity-100 pointer-events-auto"
+                      : "invisible opacity-0 pointer-events-none"
+                  }`}
               >
                 <div className="p-3 border-b border-gray-200 flex items-center justify-between">
                   <div className="flex items-center gap-3">
@@ -168,3 +174,4 @@ export const Navbar5 = () => {
     </header>
   );
 };
+```

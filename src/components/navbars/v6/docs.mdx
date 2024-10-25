@@ -1,6 +1,11 @@
+---
+title: Navbar Variant 6
+---
+
+```javascript
 import { useState } from "react";
 
-export const Navbar5 = () => {
+export const Navbar6 = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,6 +20,10 @@ export const Navbar5 = () => {
               src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
               alt="Your Company"
             />
+          </div>
+
+          {/* Right Panel */}
+          <div className="flex items-center gap-5">
             <nav className="right-panel">
               <ul className="m-0 md:flex items-center gap-x-5 hidden list-none">
                 <li>
@@ -46,10 +55,6 @@ export const Navbar5 = () => {
                 </li>
               </ul>
             </nav>
-          </div>
-
-          {/* Right Panel */}
-          <div className="flex items-center gap-5">
             <div className="relative flex">
               <img
                 className="w-10 h-10 rounded-full border-2 border-solid border-gray-400 cursor-pointer"
@@ -168,3 +173,4 @@ export const Navbar5 = () => {
     </header>
   );
 };
+```
